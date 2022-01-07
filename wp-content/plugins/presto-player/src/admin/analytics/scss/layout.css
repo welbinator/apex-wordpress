@@ -1,0 +1,73 @@
+.presto-dashboard__row {
+  --spacing: 1rem;
+  --column-count: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 calc(var(--spacing) * -0.5);
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.presto-dashboard__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  padding: calc(var(--spacing) / 3);
+  width: 33.33%;
+}
+
+.presto-dashboard__item > * {
+  height: 100%;
+}
+
+.presto-dashboard__item.is-large {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.presto-dashboard__header {
+  background: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.presto-dashboard__logo {
+  max-width: 175px;
+}
+
+.presto-dashboard__content {
+  margin: 25px 0;
+  width: calc(100% - 20px);
+}
+
+.presto-dashboard__body {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .presto-dashboard__row {
+    display: block;
+  }
+  .presto-dashboard__item {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,6BAA6B,AAAA,yBAAyB,CAAC;EACrD,QAAQ,EAAE,gBAAgB;EAC1B,IAAI,EAAE,IAAI;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "notices.scss"
+    ],
+    "names": [],
+    "file": "notices.css"
+}

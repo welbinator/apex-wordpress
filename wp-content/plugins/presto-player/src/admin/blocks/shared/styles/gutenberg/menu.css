@@ -1,0 +1,92 @@
+.presto-player__menu-content {
+  padding: 0px 4px;
+}
+
+.presto-player__menu-icon {
+  opacity: 0.75;
+  margin-right: 15px;
+}
+
+.presto-player__action-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  color: #fff !important;
+}
+
+.presto-player__action-overlay-content {
+  padding: 5%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.presto-player__action-overlay-heading {
+  color: #fff !important;
+  font-size: 24px;
+}
+
+.presto-player__menu-item {
+  width: 100%;
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: auto;
+  min-height: 32px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #555;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+  font-size: 1.1em;
+}
+
+.presto-player__menu-item.is-back-button {
+  position: -webkit-sticky;
+  position: sticky;
+  background: #fff;
+}
+
+.presto-player__menu-item.is-back-button .back-icon {
+  margin-left: -5px;
+}
+
+.presto-player__menu-item:hover {
+  color: #000;
+}
+
+.presto-player__menu-item:hover .submenu-icon {
+  opacity: 1;
+}
+
+.presto-player__menu-item:hover .presto-player__menu-icon {
+  opacity: 1;
+  color: #000;
+}
+
+.presto-player__menu-item .submenu-icon {
+  -webkit-transition: 0.3s opacity ease;
+  transition: 0.3s opacity ease;
+  margin-left: auto;
+  opacity: 0.25;
+}
+/*# sourceMappingURL=menu.css.map */

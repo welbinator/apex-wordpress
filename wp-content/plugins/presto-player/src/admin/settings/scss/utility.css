@@ -1,0 +1,109 @@
+.presto-flow > * + * {
+  margin-top: var(--presto-flow-space, 2em);
+}
+
+.presto-loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100px;
+}
+
+table.presto-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.presto-table td h2,
+table.presto-table td h3 {
+  margin: 0 0 8px 0;
+}
+
+table.presto-table.is-clickable td {
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+table.presto-table.is-clickable tr:hover td {
+  background-color: #f3f3f3;
+}
+
+table.presto-table th,
+table.presto-table td {
+  text-align: left;
+  padding: 0.65rem;
+  border-top: 1px solid #e2e4e7;
+}
+
+table.presto-table tr:first-child td {
+  border-top: none;
+}
+
+table.presto-table th {
+  color: #757575;
+  background-color: #f7f7f7;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  table.presto-table {
+    display: block;
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  table.presto-table thead,
+  table.presto-table tbody,
+  table.presto-table th,
+  table.presto-table td,
+  table.presto-table tr {
+    display: block;
+  }
+  table.presto-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table.presto-table tr {
+    margin: 0 0 1rem 0;
+  }
+  table.presto-table tr:nth-child(odd) {
+    background: #f3f3f3;
+  }
+  table.presto-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    padding: 10px;
+    padding-left: 50%;
+  }
+  table.presto-table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 10px;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  table.presto-table td:before {
+    content: attr(data-title);
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=utility.css.map */
