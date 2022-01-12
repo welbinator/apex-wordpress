@@ -1229,9 +1229,6 @@ h6 {
   .hero-container .row .flex-column {
     margin: 10px 0;
   }
-  .hero {
-    padding-top: 4vh;
-  }
   .client-container {
     border-top: 10px solid #3a3a3a;
   }
@@ -1299,7 +1296,6 @@ h6 {
 
 @media (max-width: 991px) {
   .hero {
-    padding: 7rem 1rem;
     height: auto;
   }
 }
@@ -1568,7 +1564,6 @@ h6 {
 
 .hero.about {
   height: auto;
-  max-height: 50vh;
 }
 
 .founder-image img {

@@ -2,7 +2,7 @@
 <?php echo get_header("apex"); ?>
 
 
-<div class="hero"><img class="hero-image" src="<?php echo get_template_directory_uri() ?>/assets/img/Apex-outline.svg">
+<div class="hero home"><img class="hero-image" src="<?php echo get_template_directory_uri() ?>/assets/img/Apex-outline.svg">
         <div class="container hero-container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">

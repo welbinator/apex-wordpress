@@ -123,7 +123,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   justify-content: center;
   align-items: flex-start;
   color: white;
-  
 }
 
 .home .hero {
@@ -355,7 +354,7 @@ h6 {
     margin: 10px 0;
   }
   .hero {
-    padding-top: 4vh;
+    // padding-top: 4vh;
   }
   .client-container {
     border-top: 10px solid #3a3a3a;
@@ -418,7 +417,7 @@ h6 {
 
 @media (max-width: 991px) {
   .hero {
-    padding: 7rem 1rem;
+    // padding: 7rem 1rem;
     height: auto;
   }
 }
@@ -657,10 +656,10 @@ h6 {
 
 .hero.about {
   height: auto;
-  max-height: 50vh;
+  // max-height: 50vh; 
 }
 
-// .page-template-about .section .container {
+// .page-template-about .section .container { 
 //   max-width: 1100px;
 // }
 // .section.footer .container {
